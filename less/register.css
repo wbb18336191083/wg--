@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  max-width: 1920px;
+  min-width: 625px;
+}
 .fl {
   float: left;
 }
@@ -27,9 +31,9 @@ ol,
 li {
   list-style: none;
 }
-html {
-  font-size: 10px;
-}
+/* html {
+    font-size: 10px;
+} */
 /* 头部 */
 header {
   height: 7rem;
@@ -119,7 +123,7 @@ form .register {
   margin: 0 auto;
   background: #ff8a00;
   color: #ffffff;
-  font-size: 6rem;
-  padding: 4rem 0;
+  font-size: 4rem;
+  padding: 2rem 0;
   margin-top: 4rem;
 }
