@@ -3,9 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  max-width: 1920px;
-  min-width: 625px;
+html {
+  font-size: 10px;
 }
 .fl {
   float: left;
@@ -31,9 +30,6 @@ ol,
 li {
   list-style: none;
 }
-/* html {
-    font-size: 10px;
-} */
 /* 头部 */
 header {
   height: 7rem;
@@ -58,6 +54,7 @@ header .pic a img {
   height: 100%;
 }
 header .right {
+  height: 100%;
   display: flex;
   justify-content: center;
 }
@@ -65,7 +62,7 @@ header .right a {
   margin-right: 5rem;
 }
 header .right a img {
-  width: 100%;
+  height: 100%;
 }
 /* 导航栏 */
 .nav {
@@ -93,7 +90,7 @@ form > div {
 }
 form > div span {
   position: absolute;
-  left: 25rem;
+  left: 45rem;
   top: 9rem;
 }
 form input {
