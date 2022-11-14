@@ -1,4 +1,125 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix {
+  display: block;
+  content: '';
+  clear: both;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+input {
+  outline: none;
+  border: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+html {
+  font-size: 10px;
+}
+/* 头部 */
+header {
+  height: 7rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: #ff8a00;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .pic {
+  height: 100%;
+}
+header .pic a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+header .pic a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+header .right {
+  display: flex;
+  justify-content: center;
+}
+header .right a {
+  margin-right: 5rem;
+}
+header .right a img {
+  width: 100%;
+}
+/* 导航栏 */
+.nav {
+  height: 15rem;
+  line-height: 15rem;
+  background-color: #fff;
+  border-bottom: 1px solid #c5c5c5;
+  padding-left: 10rem;
+  font-weight: 500;
+  font-size: 4rem;
+  color: #000000;
+}
+.nav a:nth-of-type(1) {
+  font-weight: 600;
+}
+/* 表单 */
+form {
+  display: flex;
+  flex-direction: column;
+}
+form > div {
+  position: relative;
+  height: 20rem;
+  border-bottom: 0.5rem solid #dcdcdc;
+}
+form > div span {
+  position: absolute;
+  left: 25rem;
+  top: 9rem;
+}
+form input {
+  width: 100%;
+  height: 100%;
+  padding-left: 10rem;
+}
+form .tel {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+form .tel .verification {
+  position: absolute;
+  right: 4rem;
+  width: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dcdcdc;
+  font-size: 5rem;
+  padding: 4rem 2rem;
+}
+form .register {
+  width: 80%;
+  margin: 0 auto;
+  background: #ff8a00;
+  color: #ffffff;
+  font-size: 6rem;
+  padding: 4rem 0;
+  margin-top: 4rem;
 }
