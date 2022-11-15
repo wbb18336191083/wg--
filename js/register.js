@@ -48,7 +48,11 @@ tel.onblur = function () {
         index++;
 
     }
+    // tel_ = JSON.stringify(tel_);
+    localStorage.setItem('tel', tel.value);
 }
+
+
 
 var codespan = document.getElementById('codespan');
 var code = document.getElementById('code');
@@ -78,6 +82,7 @@ newpwd.onblur = function () {
         newpwdspan.style.color = 'green';
         index++;
     }
+    localStorage.setItem('newpwd', newpwd.value);
 }
 
 var form = document.getElementById('form');
@@ -124,3 +129,6 @@ window.onresize = function () {
 }
 window.onload = setRem;
 window.onresize = setRem;
+
+// console.log(localStorage.getItem('tel'))
+// console.log(localStorage.getItem('newpwd'))
