@@ -1,4 +1,79 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+/* 大盒子 */
+.box {
+  margin: 0 auto;
+  max-width: 900px;
+  min-width: 250px;
+}
+/* 头部 */
+header {
+  background-color: #FE8A00;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+}
+header .one {
+  margin-left: 3rem;
+}
+header .two {
+  margin-left: 11rem;
+}
+header .three {
+  margin-left: 2rem;
+}
+/* 导航 */
+nav {
+  height: 4rem;
+  line-height: 4rem;
+  border-bottom: 0.1rem solid grey;
+}
+nav p {
+  margin-left: 1.5rem;
+}
+nav p > a:nth-of-type(1) {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+nav a {
+  color: black;
+}
+/* 主题部分 */
+section .centent {
+  height: 10rem;
+  display: flex;
+  border-bottom: 1px solid #FE8A00;
+}
+section .centent .left {
+  flex: 1;
+  margin-left: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .centent .left img {
+  width: 100%;
+  height: 8rem;
+}
+section .centent .right {
+  margin-left: 1.5rem;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+section .centent .right h1 {
+  margin-top: 0.8rem;
+  flex: 1;
+}
+section .centent .right .font {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
