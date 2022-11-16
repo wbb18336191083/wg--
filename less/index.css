@@ -1,4 +1,262 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+a {
+  color: black;
+}
+/* 大盒子 */
+.box {
+  margin: 0 auto;
+  max-width: 900px;
+  min-width: 250px;
+}
+/* 头部 */
+header {
+  background-color: #FE8A00;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+}
+header .one {
+  margin-left: 3rem;
+}
+header .two {
+  margin-left: 11rem;
+}
+header .three {
+  margin-left: 2rem;
+}
+/* 搜索 */
+nav {
+  position: relative;
+  height: 25rem;
+  width: 100%;
+  background: url(../img/index/banner.png) no-repeat;
+  background-size: 100%;
+}
+nav input {
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 86%;
+  height: 3rem;
+  padding-left: 4rem;
+}
+nav img {
+  height: 2.4rem;
+  width: 2.4rem;
+  position: absolute;
+  top: 84%;
+  left: 11%;
+}
+/* 导航 */
+.house {
+  display: flex;
+  width: 100%;
+  height: 12rem;
+  background-color: #FE8A00;
+}
+.house ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.house ul li {
+  margin-left: 2rem;
+  text-align: center;
+}
+.house ul img {
+  width: 100%;
+}
+.house ul p {
+  margin-top: 0.5rem;
+  font-size: 1.6rem;
+  color: white;
+}
+/* banner图 */
+.five {
+  width: 100%;
+}
+/* 热门房源 */
+.title {
+  overflow: hidden;
+  margin-top: 1rem;
+  width: 100%;
+  height: 6rem;
+  background-color: #FE8A00;
+  padding-left: 2rem;
+  color: white;
+}
+.title h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+.title h5 {
+  font-size: 1rem;
+}
+/* 主题部分 */
+section {
+  margin-top: 1rem;
+  width: 100%;
+}
+section .centent {
+  display: flex;
+  height: 10rem;
+  border-bottom: 1px solid #FE8A00;
+  margin-top: 2rem;
+}
+section .left {
+  flex: 1;
+  margin-left: 2rem;
+}
+section .left img {
+  width: 100%;
+}
+section .right {
+  margin-left: 2rem;
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+section .right p {
+  display: flex;
+  justify-content: space-between;
+}
+section .right p .red {
+  color: #FE8A00;
+}
+section .right p:nth-of-type(3) {
+  justify-content: flex-start;
+}
+section .right p:nth-of-type(3) span {
+  margin-bottom: 1rem;
+  text-align: center;
+  line-height: 2rem;
+  background-color: #F4F7F9;
+  height: 2rem;
+  width: 5rem;
+  white-space: nowrap;
+  margin-right: 1rem;
+  color: #8B9AAE;
+}
+section .right h1 {
+  margin-top: -1rem;
+  font-size: 2rem;
+}
+/* 热门 */
+.hot {
+  margin-top: 1rem;
+  font-size: 2rem;
+  display: flex;
+  height: 6rem;
+  line-height: 6rem;
+  justify-content: space-around;
+  border-bottom: 1px solid #FE8A00;
+}
+.hot > a:nth-of-type(1) {
+  color: #FE8A00;
+  width: 50%;
+  text-align: center;
+  border-bottom: 1px solid #FE8A00;
+}
+/* 房链接 */
+.content {
+  width: 100%;
+}
+.content ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 14rem;
+  align-content: space-around;
+}
+.content li {
+  width: 30%;
+  margin-left: 4rem;
+  margin-bottom: 0.5rem;
+}
+/* 底部 */
+footer {
+  overflow: hidden;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+footer h2 {
+  margin-top: 1rem;
+  margin-left: 3rem;
+}
+footer .apple {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+footer .text {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* 底部蒙版 */
+.mb {
+  width: 100%;
+  height: 7rem;
+  background-color: #5A5A5A;
+  opacity: 0.8;
+  position: fixed;
+  left: 0rem;
+  bottom: 0rem;
+  display: flex;
+}
+.mb .close {
+  width: 3rem;
+  height: 3rem;
+}
+.mb .pic {
+  margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mb .pic img {
+  width: 6rem;
+  height: 6rem;
+}
+.mb .font_ {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-left: 2rem;
+}
+.mb .font_ > p:nth-of-type(1) {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.mb .font_ > p:nth-of-type(2) {
+  font-size: 1.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.mb .right_ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  background-color: #FE8A00;
+  width: 36%;
+  font-size: 2.2rem;
+  font-weight: 700;
+  white-space: nowrap;
+  color: white;
 }
