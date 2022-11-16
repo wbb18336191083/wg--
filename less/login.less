@@ -1,4 +1,133 @@
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
+.box{
+    margin: 0 auto;
+    max-width: 900px;
+    min-width: 250px;
+}
+/* 头部 */
+header{
+    background-color: #FE8A00;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+  .one{
+ 
+    margin-left: 3rem;
+  }
+  .two{
+    margin-left: 11rem;
+
+  }
+  .three{
+    margin-left: 2rem;
+  }
+}
+/* 导航 */
+nav{
+    height: 3rem;
+    line-height: 3rem;
+    border-bottom: 1px solid grey;
+    p{
+        margin-left: 1.5rem;
+        white-space: nowrap;
+        &>a:nth-of-type(1){
+           
+            font-weight: 700;
+        }
+    }
+    a{
+        color: black;
+        font-size: 1.2rem;
+    }
+   
+}
+.title{
+    display: flex;
+    background: #ffffff;
+    height: 5rem;
+    line-height: 5rem;
+
+        li{
+            font-size: 1.4rem;
+white-space: nowrap;
+        flex: 1;
+padding-left: 4rem;
+        border-bottom: .4rem solid #d1d1d1;
+    }
+    .active{
+        border-bottom: .4rem solid #FE8A00;
+    }
+
+}
+/* tap切换 隐藏显示 */
+  .none{
+    &:nth-of-type(2){
+        display: none;
+
+    }
+    .int{
+        line-height: 4rem;
+          height: 4rem;
+          border-bottom: 1px solid grey;
+          input{
+              border: none;
+              padding-left: 2rem;
+              outline: none;
+          }
+          &:nth-of-type(1){
+              display: flex;
+              flex-wrap: nowrap;
+              justify-content: space-between;
+              button{
+                white-space: nowrap;
+                  align-self: center;
+                  width: 10rem;
+                  height: 3rem;
+                  font-size: 1.6rem;
+                  border: 1px solid rgb(197, 178, 178);
+                 
+              }
+              
+          }
+         
+      }
+      
+  }
+  .but{
+    white-space: nowrap;
+      margin-top: 1.5rem;
+      margin-left: 2rem;
+         height: 4rem;
+         width: 90%;
+     color: white;
+         font-size: 1.4rem;
+         background-color: #FE8A00;
+         border: none;
+         outline: none;
+  }
+  .regester{
+    color: black;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+   flex-wrap: nowrap;
+    &>a:nth-of-type(1){
+        color: #FE8A00;
+        margin-left: 2rem;
+        white-space: nowrap;
+        margin-right: 2rem;
+
+    }
+    &>a:nth-of-type(2){
+        white-space: nowrap;
+
+       margin-right: 2rem;
+    }
+  }
+  
