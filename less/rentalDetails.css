@@ -5,6 +5,8 @@
 }
 body {
   background: #f5f5f5;
+  max-width: 1100px;
+  min-width: 300px;
 }
 .fl {
   float: left;

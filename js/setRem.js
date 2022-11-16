@@ -7,7 +7,6 @@ function setRem(){
     html.style.fontSize=(client_w/ui_w)*10+'px'
  
   }    
-
   var timer=null 
   window.onresize=function(){
     clearTimeout(timer)

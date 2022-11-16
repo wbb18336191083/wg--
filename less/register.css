@@ -6,6 +6,11 @@
 html {
   font-size: 10px;
 }
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 600px;
+}
 .fl {
   float: left;
 }
@@ -117,6 +122,7 @@ form .tel .verification {
   border: 1px solid #dcdcdc;
   font-size: 1rem;
   padding: 2rem 1rem;
+  white-space: nowrap;
 }
 form .register {
   width: 80%;

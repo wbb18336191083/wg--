@@ -15,6 +15,8 @@
 }
 body {
   background: #f5f5f5;
+  min-width: 250px;
+  max-width: 940px;
 }
 .fl {
   float: left;
@@ -336,12 +338,15 @@ footer {
   background-color: #2f3130;
   color: #939494;
   padding: 1rem 1.5rem;
+  width: 100%;
 }
 footer h2 {
+  width: 100%;
   font-size: 1.4rem;
   height: 4rem;
   line-height: 4rem;
   border-bottom: 0.1rem solid #3e403f;
+  white-space: nowrap;
 }
 footer h2 a {
   color: #939494;
@@ -349,6 +354,7 @@ footer h2 a {
 footer .box {
   display: flex;
   padding: 1rem;
+  width: 100%;
 }
 footer .box > div {
   flex: 1;
@@ -359,10 +365,20 @@ footer .box > div img {
   height: 2.1rem;
   margin-right: 1rem;
 }
+footer .box .box1 {
+  margin-left: 1rem;
+}
+footer .box .box1 div {
+  white-space: nowrap;
+}
 footer .txt {
   margin-top: 1rem;
   text-align: center;
+  width: 100%;
 }
 footer .txt p {
+  font-size: 1.2rem;
   line-height: 1.8rem;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
 }

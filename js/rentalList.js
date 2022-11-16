@@ -4,8 +4,8 @@ function setRem() {
     var ui_w = 375;
     var client_w = document.documentElement.clientWidth || document.body.clientWidth;
     //设置最大最小宽度
-    client_w = client_w > 940 ? 940 : client_w;
-    client_w = client_w < 250 ? 250 : client_w;
+    client_w = client_w > 1100 ? 1100 : client_w;
+    client_w = client_w < 300 ? 300 : client_w;
     // console.log(ui_w, client_w);
     var html = document.getElementsByTagName("html")[0];
     html.style.fontSize = (client_w / ui_w) * 10 + 'px';
